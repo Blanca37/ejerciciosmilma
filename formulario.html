@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Formulario</title>
+  </head>
+  <header>
+
+
+  </header>
+  <body>
+<div class="container">
+    
+    <h1>Formulario</h1><br><br>
+<div class="row">
+        <div class="col">
+
+    <form>
+
+      <br><br>
+    <!--elemento tipo texto-->
+    <fieldset>
+        <legend>Datos Personales:</legend>
+        <label for="nombre">Nombre<br>
+                <input name="nombre" type="text" size="30">
+        </label><br>
+        <label for="email">Email<br>
+                <input type="text" size="30" name=email email>
+        </label><br>
+        <label for="fecha_nac">Fecha de nacimiento<br>
+                <input type="text" size="10" name=fecha_nac>
+        </label><br>        
+        </fieldset><br>
+    <label for="nombre">Nombre<br>
+        
+            <input type="text" name="nombre"><br>
+    <label for="apellido">Apellido<br>
+            
+            <input type="text" name="apellido"><br>
+    
+    <!--elemento tipo botón-->
+            <input type="radio" name="gender" value="male" checked> opción 1<br>
+            <input type="radio" name="gender" value="female"> opción 2<br>
+            <input type="radio" name="gender" value="other"> opción 3 <br>
+            <select name="cars"><br>
+    <!--elemento tipo opción-->
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+             <option value="audi">Audi</option>
+            </select> <br>
+    <!--elemento tipo texarea--> 
+            <textarea name="mensaje" rows="10" cols="30">Escribe tu mensaje
+            </textarea><br>
+    <!--elemento tipo lista-->
+        Selecciona tu favorito: <br> 
+            <input list="browsers">
+            <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+            </datalist><br><br>
+    <!--elemento tipo rango-->
+        Calcule el valor de su hipoteca:<br>
+             0
+            <input type="range"  id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br><br>
+            
+    <!--elemento tipo contraseña-->
+            Usuario:<br>
+            <input type="text" name="username"><br>
+            Contraseña:<br>
+            <input type="password" name="psw"><br><br><br>
+   
+    <!--elemento tipo box-->
+            <input type="checkbox" name="política_privacidad" value="Acepto política de privacidad"> Acepto política de privacidad<br>
+            <input type="checkbox" name="acepto_correspondencia" value="Correspondencia"> Acepto recibir correspondencia
+            <br><br>
+           
+   
+    <!--elemento tipo elegir color--><br>
+            Elige un color:
+            <input type="color" name="favcolor"><br>
+
+      
+      <!--elemento tipo fecha--><br>      
+            Fecha de cumpleaños:
+            <input type="date" name="bday"> <br> 
+        <!--elemento tipo fecha y hora--><br>   
+             Reservar:
+                <input type="datetime-local" name="bdaytime"><br>
+        <!--elemento tipo email--> <br>
+             E-mail:
+                <input type="email" name="email"><br>
+        <!--elemento tipo mes--><br>
+             Selecciona un archivo: <br> <input type="file" name="myFile"><br>
+        <!--elemento número--><br>
+             Selecciona una cantidad de 1-5
+             <input type="number" name="quantity" min="1" max="5"><br>
+        <!--elemento valor tipo con atributos predeterminado--><br>
+                Cantidad:
+             <input type="number" name="points" min="0" max="100" step="10" value="30"><br>
+        <!--elemento tipo buscador --><br>
+             Buscar:
+             <input type="search" name="googlesearch"><br><br>
+         <!--elemento tipo enviar borrar--><br>     
+         <input type="submit" value="enviar">
+         <input type="reset" value="borrar"><br><br> 
+
+  </form>
+</div>   
+</div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
