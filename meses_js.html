@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meses, Semana, Retardo</title>
+  
+</head>
+<body>
+    <script type="text/javascript">
+/*var meses = new array ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Julio");//Enero es el mes cero.
+var fecha = new Date();
+var mes = Fecha.getMonth();
+alert ("El mes actual es: "+ meses[mes]);*/
+
+/*var dias = new Array ("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+var fecha = new Date();
+var semana = fecha.getDay();
+alert ("El día de la semana actual es: "+ dias[semana]);*/
+
+var fecha_1= new Date();
+var respuesta = prompt ("¿Quién descubrió América?", "");
+var fecha_2 = new Date();
+var tiempo = fecha_2 - fecha_1;
+
+if (tiempo > 999){//Para ponerlo en segundos
+    var segundos = parseInt(tiempo/1000);
+    tiempo -= (segundos*1000); //tiempo = tiempo - (segundos*1000);
+
+}
+else{
+    var segundos = 0;
+}
+if (segundos > 59){//Si hay más de 59 segundos es que al menos hay un minuto
+    var minutos  = parseInt(segundos/60);
+    segundos -= (minutos*60); 
+}
+else{
+    minutos = 0;
+}
+
+document.write("Ha tardado " + minutos + "minutos, " +segundos+ "segundos, "+tiempo+ " milisegundos.");
+
+
+
+
+
+        </script>
+        

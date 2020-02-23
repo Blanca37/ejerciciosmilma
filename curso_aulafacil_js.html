@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Aula Fácil JavaScript</title>
+  
+</head>
+<body>
+    <script type="text/javascript">
+        
+        
+        //Ejercicio1=Escribo un mensaje.
+        /*document.write("Hola Script"); 
+   
+        
+        //Ejercicio2=Declaramos 2 variables; utilizamos un prompt(una ventana que te pedirá un dato)
+        var nombre;
+        var altura;
+        nombre = prompt('Introduce tu nombre');
+        altura = prompt('Introduce tu altura');
+        document.write('Te llamas: ', nombre,"<br>" );
+        document.write('Mides: ', altura);
+
+        //Ejercicio3=Estructuras condicionales simples: Ahora vamos a poner una condición; después he añadido otra
+        var nombre;
+        var edad;
+        nombre = prompt('Introduce tu nombre');
+        edad = prompt('Introduce tu edad');
+
+        if (edad >= 18){
+            document.write('Tu nombre es ', nombre + ' y eres mayor de edad.');
+        }
+        if (edad < 18){
+            document.write('Tu nombre es ', nombre + ' y eres menor de edad.');
+        }
+        //Ejercicio4=Estructuras condicionales compuestas:IF/ELSE
+        var nombre;
+        var edad;
+        nombre = prompt('Introduce tu nombre');
+        edad = prompt('Introduce tu edad');
+
+        if (edad >= 18){
+            document.write('Tu nombre es ', nombre + ' y eres mayor de edad.');
+        }
+        else{
+            document.write('Tu nombre es ', nombre + ' y eres menor de edad.');
+        }
+     //Operador Lógico && ("y"). Se utiliza para que en una sentencia if, se cumplan 2 o más condiciones. Se tienen que cumplir todas las condiciones
+        //Ejercicio5=Cumplir dos condiciones*/
+
+       /* var num1;
+        var num2;
+         num1 = prompt('Introduce un número: ', '');
+         num2 = prompt('Introduce otro número: ', '');
+
+         if(num1> 5 && num2 >5)
+         {
+             document.write('Ambos números son mayores que 5');
+         }
+         else{
+            document.write('Ambos números son menores que 5'); 
+         }
+
+        //Operador lógico:Se cambia de operador en la función. Se representa por ||
+         //Ejercicio6=Se ejecuta al cumplir una de las condiciones*/
+         /*var num1;
+         var num2;
+
+         num1 = prompt('Introduce un número: ');
+         num2 = prompt('Introduce otro número: ');
+         if (num1 > 5 || num2 > 5){
+             document.write('Algún número o los dos, son mayores que 5');
+
+         }
+         else
+         {
+            document.write('Ningún número es mayor que 5');
+         }
+        
+        //Ejercicio de clase=Variables globales
+        /*var valor=10;
+        function doblar (dato){
+            dato *=2;
+            document.write ("El doble del valor es " + dato + "<br>");
+        }
+            document.write("El valor es " + valor + "<br>");
+            doblar (valor);
+            document.write ("El valor sigue siendo " + valor);*/
+
+     //Switch:variable de bucle
+        var num;
+        num = prompt('Introduce un número: ');
+        num = Math.ceil(num); //Math.ceil(num), aproxima a alza; Math.flour(), aprox a la baja; Math.round(), redondea; parseInt(num), te escribe la parte entera del número; Match.random(), te devuelve un número aleatorio.
+        
+        switch(num)//No se cierra con un (;)
+        {
+            case 1:
+            document.write("Has elegido el número 1");
+                break;
+            case 2:
+            document.write("Has elegido el número 2");
+                break;
+            case 3:
+            document.write("Has elegido el número 3");
+                break;
+            default:
+                document.write("Has elegido un número diferente que no está en el intervalo de 1 a 3");
+                break;
+
+        }
+ </script>
+   
+</body>
+</html>
