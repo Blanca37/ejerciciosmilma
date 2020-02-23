@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+} /* Al poner asterisco, nos referimos a todos los elementos de la página, que serán de margen:0 y padding(margen interior):0*/
+
+body{
+    background: #eeeeee; /*color del fondo de todo el cuerpo de la web*/
+    color: #000;/*color de la letra*/
+    font-family: 'Roboto', sans-serif;/*Tipo de letra. Se ponen varios tipos, por si no se tienen una se utilizará la otra*/
+}
+
+.header p {/*Todo lo relacionado con el estilo del encabezado*/
+    font-size: 50px; /*Tamaño de la letra*/
+    text-align: center; /*Alineación del texto:centrado*/
+    padding: 20px 0; /*Es también un tipo de margen, pero interno. Imagina que empiezas a escribir dentro de un recuadro. Es el espacio que se crea entre la línea y el texto que va dentro del recuadro */
+}
+
+.contenedor{
+    width: 90%; /*anchura: 90% de la página*/
+    max-width: 1000px;/*tamaño máximo de 1000píxeles*/
+    border: 10px solid #000;/*borde:10px, color:negro */
+    margin: auto;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.contenedor > div {
+    display: block;/*que abarque todo el espacio disponible*/
+    padding: 20px;
+    color: #fff;
+    background: #2f89fc;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.25);/*sombra de la caja. Negro con 25 de transparencia, por seo, utiliza rgba*/
+}

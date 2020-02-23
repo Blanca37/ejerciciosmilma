@@ -1,0 +1,6 @@
+.contenedor{
+display: grid; 	/*el contenedor es una regilla*/
+grid-template-columns: 100px 100px 100px;	/*especificamos cuántas columnas queremos que tenga y su tamaño. Tenemos 3 comlumnas de 100px cada una*/
+grid-template-rows: 150px 300px ;	/*especificamos las medidas de las filas. La primera es de 150 y la segunda de 300px. las demás las ha hecho de forma automática, dependerán del contenido que tengan dentro*/
+grid-gap: 20px;	/*Espaciado de cada celda*/
+}
