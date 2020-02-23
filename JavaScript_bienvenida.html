@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+
+
+
+<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Página de bienvenida</title>
+			<script type="text/javascript">
+				<!--
+				var nombre; // string nombre de usuario
+				var fecha = new Date();//fecha y hora actual
+				var hora = fecha.getHours();// hora actual formato 24h (0-23)
+				var minuto= fecha.getMinutes () ;
+				
+				// desde el prompt guarda el nombre en la variable nombre 
+				nombre = window.prompt( "Introduzca su nombre" );
+				
+				//determinar si es por la mañana
+				if ( hora < 12 )
+					document.write( "<h1>Buenos dias, " );
+				//por la tarde
+				if ( hora >=12 )
+					document.write( "<h1>Buenas tardes, " );
+				//por la noche
+				if ( hora >=20 )
+					document.write( "<h1>Buenas noches, " );
+				
+				document.writeln( nombre + " son las: " + hora + " h" + minuto + " min" +
+				   ", bienvenido/a a mi p&aacute;gina Web</h1>" );
+				//-->
+				
+			</script>
+		</head>
+		<body>
+			<p>Recargar la página para volver a ejecutar el script</p>
+		</body>
+</html>
